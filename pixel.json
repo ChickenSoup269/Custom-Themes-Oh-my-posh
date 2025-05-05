@@ -1,0 +1,95 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#FF5555",
+          "foreground": "#FFFFFF",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond",
+          "template": "{{ .UserName }} ",
+          "trailing_diamond": "\ue0c6",
+          "type": "session"
+        },
+        {
+          "background": "#55AA55",
+          "foreground": "#FFFFFF",
+          "leading_diamond": "\ue0c7",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "diamond",
+          "template": " {{ .Path }} ",
+          "trailing_diamond": "\ue0c6",
+          "type": "path"
+        },
+        {
+          "background": "#5555FF",
+          "foreground": "#FFFFFF",
+          "leading_diamond": "\ue0c7",
+          "properties": {
+            "branch_icon": "󰘬 "
+          },
+          "style": "diamond",
+          "template": " {{ .HEAD }} ",
+          "trailing_diamond": "\ue0c6",
+          "type": "git"
+        },
+        {
+          "background": "#AA55AA",
+          "foreground": "#FFFFFF",
+          "leading_diamond": "\ue0c7",
+          "properties": {
+            "time_format": "15:04"
+          },
+          "style": "diamond",
+          "template": " {{ .CurrentDate | date .Format }} ",
+          "trailing_diamond": "\ue0c6",
+          "type": "time"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "background": "#FFAA00",
+          "foreground": "#000000",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond",
+          "template": " \ue266 RAM: {{ round .PhysicalPercentUsed .Precision }}% | {{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB ",
+          "trailing_diamond": "\ue0c6",
+          "type": "sysinfo"
+        },
+        {
+          "background": "#00AAFF",
+          "foreground": "#FFFFFF",
+          "leading_diamond": "\ue0c7",
+          "style": "diamond",
+          "template": " {{ if eq .OS \"windows\" }}\ue70f{{ else if eq .OS \"linux\" }}\ue712{{ else if eq .OS \"darwin\" }}\ue711{{ else }}\uf17c{{ end }} ",
+          "trailing_diamond": "\ue0b4",
+          "type": "os"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#FFAA00",
+          "style": "plain",
+          "template": "\u279c ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 3
+}
