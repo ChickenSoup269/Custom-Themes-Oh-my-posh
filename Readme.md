@@ -28,9 +28,9 @@ oh-my-posh init pwsh --config "$HOME\pixel_custom.omp.json" | Invoke-Expression
 notepad "$HOME\pixel_custom.omp.json"
 ```
 
-<p align="center"> <img src="./images/image.png" alt="drawing" width="500"/> </p>
+<p align="center"> <img src="./images/image.png" alt="drawing" width="full"/> </p>
 
-<p align="center"> <img src="./images/image2.png" alt="drawing" width="500"/> </p>
+<p align="center"> <img src="./images/image2.png" alt="drawing" width="full"/> </p>
 
 ## TẢI OH MY POSH
 
