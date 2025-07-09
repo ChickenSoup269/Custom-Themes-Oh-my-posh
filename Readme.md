@@ -27,6 +27,9 @@ oh-my-posh init pwsh --config "$HOME\pixel_custom.omp.json" | Invoke-Expression
 ```bash
 notepad "$HOME\pixel_custom.omp.json"
 ```
+4. Về font
+GohuFont 11 Nerd Font Propo 
+link: https://www.nerdfonts.com/font-downloads
 
 <p align="center"> <img src="./images/image.png" alt="drawing" width="full"/> </p>
 
