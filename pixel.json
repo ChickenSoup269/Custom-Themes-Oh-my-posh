@@ -26,7 +26,7 @@
           "type": "path"
         },
         {
-          "background": "#5555FF",
+          "background": "#55b0ff",
           "foreground": "#FFFFFF",
           "leading_diamond": "\ue0c7",
           "properties": {
@@ -56,9 +56,9 @@
       "alignment": "right",
       "segments": [
         {
-          "background": "#FFAA00",
+          "background": "#ffd555",
           "foreground": "#000000",
-          "leading_diamond": "\ue0b6",
+           "leading_diamond": "\ue0c7",
           "style": "diamond",
           "template": " \ue266 RAM: {{ round .PhysicalPercentUsed .Precision }}% | {{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB ",
           "trailing_diamond": "\ue0c6",
